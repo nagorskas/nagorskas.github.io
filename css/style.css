@@ -176,7 +176,7 @@ ol {
 	height: 100%;
 	padding-left: 227.5px;
 	padding-right: 227.5px;
-	background-color:#F5F5F5;
+	background-color:#FFFFFF;
 }
 
 .spacial-controls {
@@ -650,9 +650,11 @@ ol {
 }
 
 .gallery-item {
-	width: 25%;
+	width: 75%;
+	margin-left:12.5%;
 	float: left;
 	position: relative;
+	
 	
 }
 
@@ -680,6 +682,7 @@ ol {
 	
 	color:#ffffff;
 	text-align: center;
+	
 }
 
 .gallery-item .site-btn {
@@ -690,10 +693,10 @@ ol {
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
 	transition: all 0.4s;
+	
 }
 
 .hover-info {
-	
 }
 
 .gallery-item:hover .hover-info {
