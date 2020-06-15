@@ -650,7 +650,8 @@ ol {
 }
 
 .gallery-item {
-	width: 33.33333333%;
+	width: 75%;
+	margin-left:12.5%;
 	float: left;
 	position: relative;
 	
