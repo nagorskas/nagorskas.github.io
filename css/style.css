@@ -17,7 +17,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.5);
-  background: LightGray
+  background: LightGray;
 }
 @media screen and (max-width: 992px) {
   body {
