@@ -10,6 +10,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	
 }
 
 .header {
@@ -61,7 +62,8 @@ nav a:hover {
   display: none;
   position: absolute;
   background-color: #fff;
-  padding: 10px;
+  padding: 5px;
+  padding-top: 10px;
   list-style-type: none;
   z-index: 999;
   text-align: justify;
@@ -112,7 +114,7 @@ nav a:hover {
 	position:absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   margin: auto;
-  max-height: 100%;
+  max-height: 90%;
 }
 
 .gallery-column:last-child {
@@ -161,7 +163,7 @@ nav a:hover {
 }
 
 .text-container {
-    width: 1080px; /* Adjust the width as desired */
+    width: 56%; /* Adjust the width as desired */
 	font-weight: 400;
 	text-align: justify;
 	display: block;
@@ -198,17 +200,19 @@ nav a:hover {
 .footer {
   background-color: #fff;
   color: #707070;
-  padding: 20px;
   text-align: center;
   font-size: 12px;
   font-weight: 300;
   margin-top: auto; /* Push the footer to the bottom */
+  width: 100%; /* Adjust the width as desired */
+
+  
 }
 
 
 .gallery-container {
   display: block;
-  width: 1080px; /* Adjust the width as desired */
+  width: 56%; /* Adjust the width as desired */
   padding: 2%;
   text-align: center;
   justify-content: center;
@@ -224,6 +228,27 @@ nav a:hover {
     height: 90px;
   overflow: hidden;
   /* Add other styling properties as needed */
+}
+
+.thumbnail-container {
+	padding: 1%;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks between thumbnails */
+  width: 100%; /* Set a specific width for the container */
+
+}
+
+}
+
+.thumbnails {
+  display: inline-block; /* Ensure the container wraps around the thumbnails */
+}
+
+.thumbnails img {
+  /* Style your thumbnails as needed */
+  display: inline-block;
+  width: 150px; /* Adjust the width as per your design */
+  height: auto; /* Adjust the height as per your design */
 }
 
 .thumbnail {
@@ -280,3 +305,22 @@ cursor: pointer;
 /* Additional Styles */
 
 /* Add your custom styles for the portfolio, projects, about, and contact pages here */
+
+/* SCROLLBAR /
+
+/* Hide the default scrollbar */
+/* Scrollbar Styles */
+.thumbnail-container::-webkit-scrollbar {
+  height: 10px;
+  background-color: #fff;
+}
+
+.thumbnail-container::-webkit-scrollbar-thumb {
+  background-color: #EAEAEA;
+  border-radius: 20px;
+}
+
+.thumbnail-container::-webkit-scrollbar-thumb:hover {
+  background-color: #DCDCDC;
+}
+

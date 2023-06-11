@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+	<link rel="stylesheet" href="perfect-scrollbar.css">
 </head>
 <body>
 	<div class="header">
@@ -28,7 +29,9 @@
   <div class="main-image-container">
     <img class="main-image" id="mainImage" src="img/praeitiessviesa/praeitiessviesa1.jpg" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
   </div>
-  <div class="thumbnail-timeline">
+
+	<div class="thumbnail-container">
+	<div class="thumbnails">
     <img class="thumbnail" src="img/praeitiessviesa/praeitiessviesa1.jpg" alt="Thumbnail 1" onclick="changeMainImage">
 	<img class="thumbnail" src="img/praeitiessviesa/praeitiessviesa2.jpg" alt="Thumbnail 1" onclick="changeMainImage">
 	<img class="thumbnail" src="img/praeitiessviesa/praeitiessviesa3.jpg" alt="Thumbnail 1" onclick="changeMainImage">
@@ -37,12 +40,10 @@
 	<img class="thumbnail" src="img/praeitiessviesa/praeitiessviesa6.jpg" alt="Thumbnail 1" onclick="changeMainImage">
 	<img class="thumbnail" src="img/praeitiessviesa/praeitiessviesa7.jpg" alt="Thumbnail 1" onclick="changeMainImage">
 	<img class="thumbnail" src="img/praeitiessviesa/praeitiessviesa8.jpg" alt="Thumbnail 1" onclick="changeMainImage">
-	
-	
+	</div>
+	</div>
 
-  </div>
 </div>
-
 
 	<div id="popup"></div>
 	
@@ -52,7 +53,5 @@
 	
     <script src="script.js"></script>
 	<script src="includescripts.js"></script>
-
-
 </body>
 </html>
