@@ -25,6 +25,11 @@ body {
 	font-size: 24px;
 }
 
+h2 {
+    font-weight: 400;
+	font-size: 20px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -86,6 +91,14 @@ nav a:hover {
   max-width: 33.33%;
   padding-right: 10px;
   box-sizing: border-box;
+   position:relative;
+}
+
+.gallery-column #randomImage{
+	position:absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  max-height: 700px;
 }
 
 .gallery-column:last-child {
@@ -185,19 +198,62 @@ nav a:hover {
 }
 
 
-#main-image {
-height: 500px;
-}
+
 
 .thumbnail-timeline {
   display: flex;
+  justify-content: center;
   padding: 1%;
+    height: 90px;
+  overflow: hidden;
   /* Add other styling properties as needed */
 }
 
 .thumbnail {
-  width: 100px;
+	object-fit: cover;
+  width: 150px;
+  height: 100px;
+  padding: 3px;
+
   /* Add other styling properties as needed */
+}
+
+/* Styles for the clickable thumbnails */
+input[type="radio"].thumbnail-radio {
+  display: none;
+}
+
+.thumbnail-timeline label {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.thumbnail-timeline label img {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail-timeline label:hover img,
+.thumbnail-timeline input[type="radio"]:checked + label img {
+  border-color: #000;
+}
+
+/* Styles for the main image */
+.main-image-container {
+  max-height: 600px;
+  width: 100%;
+}
+
+.main-image {
+  max-width: auto;
+  height: 600px;
+  transition: opacity 0.3s ease;
+  justify-content: center;
+}
+
+.thumbnail-radio:checked ~ .main-image-container .main-image {
+  opacity: 0;
+  transition-delay: 0.1s;
 }
 
 

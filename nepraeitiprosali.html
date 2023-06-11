@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>TAUTVYDAS NAGORSKAS</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <script src="script.js"></script>
@@ -22,23 +23,32 @@
 
  <div class="content">
         <div class="text-container">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		<h2>(NE)PRAEITI PRO ŠALĮ</h2>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		</p>
         </div>
 		
 		
 		<div class="gallery-container">
-  <img id="main-image" src="img/image5.jpg" alt="Large Image" onclick="showImage(this.src)">
+  <div class="main-image-container">
+    <img class="main-image" id="mainImage" src="img/nps/nps1-1.jpg" alt="Main Image" >
+  </div>
   <div class="thumbnail-timeline">
-    <img class="thumbnail" src="img/image1.jpg" alt="Thumbnail 1">
-    <img class="thumbnail" src="img/image2.jpg" alt="Thumbnail 2">
-    <img class="thumbnail" src="img/image3.jpg" alt="Thumbnail 3">
+    <img class="thumbnail" src="img/nps/nps1-1.jpg" alt="Thumbnail 1" onclick="changeMainImage('img/nps/nps1-1.jpg')">
+    <img class="thumbnail" src="img/nps/nps1-2.jpg" alt="Thumbnail 2" onclick="changeMainImage('img/nps/nps1-2.jpg')">
+    <img class="thumbnail" src="img/nps/nps1-3.jpg" alt="Thumbnail 3" onclick="changeMainImage('img/nps/nps1-3.jpg')">
+	<img class="thumbnail" src="img/nps/nps1-4.jpg" alt="Thumbnail 1" onclick="changeMainImage('img/nps/nps1-4.jpg')">
+    <img class="thumbnail" src="img/nps/nps1-5.jpg" alt="Thumbnail 2" onclick="changeMainImage('img/nps/nps1-5.jpg')">
+    <img class="thumbnail" src="img/nps/nps1-6.jpg" alt="Thumbnail 3" onclick="changeMainImage('img/nps/nps1-6.jpg')">
+	
     <!-- Add more thumbnail images as needed -->
   </div>
 </div>
+
 
 <div id="imagePopup" class="image-popup">
     <span class="close-button" onclick="closeImage()">&times;</span>

@@ -41,3 +41,33 @@ thumbnails.forEach((thumbnail) => {
     mainImage.setAttribute('src', imagePath);
   });
 });
+
+
+// JavaScript code
+
+// Wrap the code inside a DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all thumbnail images
+  const thumbnails = document.querySelectorAll('.thumbnail');
+
+  // Add click event listener to each thumbnail image
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+      // Get the source of the clicked thumbnail image
+      const thumbnailSrc = this.src;
+
+      // Get the main image element
+      const mainImage = document.getElementById('mainImage');
+
+      // Update the source of the main image
+      mainImage.src = thumbnailSrc;
+    });
+  });
+});
+
+function changeMainImage(imagePath) {
+  var mainImage = document.getElementById('mainImage');
+  mainImage.src = imagePath;
+}
+
+
