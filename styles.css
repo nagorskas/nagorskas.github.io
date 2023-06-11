@@ -13,6 +13,21 @@ body {
 	
 }
 
+.about {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	vertical-align:top
+
+
+}
+
+.aboutimg{
+	max-width: 50%;
+	padding: 3%;
+	vertical-align:top
+	
+}
 .header {
     background-color: #fff;
     color: #000;
@@ -168,6 +183,7 @@ nav a:hover {
 	text-align: justify;
 	display: block;
 	  justify-content: center;
+	  align-items: center;
 	}
 
 .project-list {
