@@ -8,23 +8,9 @@
     <script src="script.js"></script>
 </head>
 <body>
-<div class="header">
-    <br><h1>TAUTVYDAS NAGORSKAS</h1><br>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-			<li class="dropdown">
-				<a href="">PROJECTS</a>
-				<ul class="dropdown-menu">
-				<li><a href="nepraeitiprosali.html">(Ne)praeiti pro šalį, 2020–2023</a></li>
-      </ul>
-    </li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-</div>
+	<div class="header">
+		<div id="navigation"></div>
+	</div>
 
 
 
@@ -53,14 +39,13 @@
     </div>
 </div>
 
-<div id="imagePopup" class="image-popup" oncontextmenu="return false;">
-    <span class="close-button" onclick="closeImage()">&times;</span>
-    <img id="popupImage" src="" alt="Enlarged Image">
-</div>
-
-<footer class="footer">
-    <p>&copy; 2023 Tautvydas Nagorskas. All rights reserved.</p>
-</footer>
+	<div id="popup"></div>
+	<footer class="footer">
+		<div id="copyright"></div>
+	</footer>
+	
+    <script src="script.js"></script>
+	<script src="includescripts.js"></script>
 
 
 </body>

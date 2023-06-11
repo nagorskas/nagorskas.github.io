@@ -19,3 +19,14 @@ fetch('includes/copy.html')
   .catch(error => {
     console.error(`Error loading navigation component: ${error}`);
   });
+
+const popup = document.getElementById('popup');
+
+fetch('includes/popup.html')
+  .then(response => response.text())
+  .then(html => {
+    popup.innerHTML = html;
+  })
+  .catch(error => {
+    console.error(`Error loading navigation component: ${error}`);
+  });
