@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TAUTVYDAS NAGORSKAS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="header">
+    <br><h1>TAUTVYDAS NAGORSKAS</h1><br>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="content">
+    <div class="gallery-column">
+        <img src="img/image1.jpg" alt="Image 1" onclick="showImage(this.src)">
+        <img src="img/image6.jpg" alt="Image 4" onclick="showImage(this.src)">
+        <img src="img/image11.jpg" alt="Image 7" onclick="showImage(this.src)">
+		<img src="img/image15.jpg" alt="Image 7" onclick="showImage(this.src)">
+		<img src="img/image5.jpg" alt="Image 7" onclick="showImage(this.src)">
+    </div>
+    <div class="gallery-column">
+        <img src="img/image2.jpg" alt="Image 2" onclick="showImage(this.src)">
+        <img src="img/image7.jpg" alt="Image 5" onclick="showImage(this.src)">
+        <img src="img/image8.jpg" alt="Image 8" onclick="showImage(this.src)">
+		<img src="img/image9.jpg" alt="Image 7" onclick="showImage(this.src)">
+		<img src="img/image10.jpg" alt="Image 7" onclick="showImage(this.src)">
+    </div>
+    <div class="gallery-column">
+        <img src="img/image3.jpg" alt="Image 3" onclick="showImage(this.src)">
+        <img src="img/image12.jpg" alt="Image 6" onclick="showImage(this.src)">
+        <img src="img/image13.jpg" alt="Image 9" onclick="showImage(this.src)">
+		<img src="img/image14.jpg" alt="Image 7" onclick="showImage(this.src)">
+		<img src="img/image4.jpg" alt="Image 7" onclick="showImage(this.src)">
+    </div>
+</div>
+
+<div id="imagePopup" class="image-popup">
+    <span class="close-button" onclick="closeImage()">&times;</span>
+    <img id="popupImage" src="" alt="Enlarged Image">
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Tautvydas Nagorskas. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
