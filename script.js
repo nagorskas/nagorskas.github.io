@@ -1,3 +1,5 @@
+			//* display photo on click in gallery // 
+
 function showImage(imageUrl) {
   var popupImage = document.getElementById("popupImage");
   popupImage.src = imageUrl;
@@ -7,6 +9,8 @@ function showImage(imageUrl) {
 function closeImage() {
   document.getElementById("imagePopup").style.display = "none";
 }
+
+			//* random image display, index pages // 
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get a reference to the image element
@@ -23,4 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Set the source attribute of the image element
   randomImageElement.src = randomImageSource;
+});
+
+
+			//* GALLERY scrollable // 
+
+const thumbnails = document.querySelectorAll('.thumbnail');
+const mainImage = document.getElementById('main-image');
+
+thumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener('click', () => {
+    const imagePath = thumbnail.getAttribute('src');
+    mainImage.setAttribute('src', imagePath);
+  });
 });

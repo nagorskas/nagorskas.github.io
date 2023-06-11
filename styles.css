@@ -135,8 +135,11 @@ nav a:hover {
 
 .text-container {
     width: 1080px; /* Adjust the width as desired */
-	font-weight: 400
-}
+	font-weight: 400;
+	text-align: justify;
+	display: block;
+	  justify-content: center;
+	}
 
 .project-list {
     list-style-type: none;
@@ -170,6 +173,31 @@ nav a:hover {
   font-size: 12px;
   font-weight: 300;
   margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+.gallery-container {
+  display: block;
+  width: 1080px; /* Adjust the width as desired */
+  padding: 2%;
+  text-align: center;
+  justify-content: center;
+}
+
+
+#main-image {
+height: 500px;
+}
+
+.thumbnail-timeline {
+  display: flex;
+  padding: 1%;
+  /* Add other styling properties as needed */
+}
+
+.thumbnail {
+  width: 100px;
+  /* Add other styling properties as needed */
 }
 
 
