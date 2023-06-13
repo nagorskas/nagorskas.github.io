@@ -369,9 +369,9 @@ nav a:hover {
 
 .hidden {
             display: none;
+}
 
-
-/* MOBILE VERSION *//////////////////////////////////////////////
+/* MOBILE VERSION */
 
 @media (max-width: 1080px) {
 	
@@ -533,7 +533,7 @@ nav a:hover {
 }
 
 .gallery img {
-    width: calc(33%;);
+    width: calc(33% - 10px);
     max-width: 100%;
     object-fit: cover;
     cursor: pointer;
@@ -721,3 +721,5 @@ margin-bottom: -7px;
 
 .hidden {
             display: none;
+}
+}
