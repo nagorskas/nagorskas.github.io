@@ -109,7 +109,40 @@ nav a:hover {
   background-color: transparent; /* Set background color to transparent */
 }
 
-.lang-button.active {
+.lang-button:hover {
+	 color: #000;
+ }
+
+.lang-button:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+ /* BUTTONS */
+ 
+ .buttons {
+  margin-bottom: 1%;
+}
+ 
+ .button {
+	 display: inline-block;
+  margin-left: 0px;
+  padding: 8px 8px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: Montserrat;
+  color: #8E8E8E;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent; /* Set background color to transparent */
+ }
+ 
+ .button:hover {
+	 color: #000;
+ }
+ 
+ .button:active {
   color: #000;
   text-decoration: underline;
 }
@@ -152,48 +185,31 @@ nav a:hover {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .gallery img {
-    width: calc(24vw - 10px);
+    width: calc(32vw - 10px);
     max-width: 100%;
-    object-fit: cover;
+ object-fit: contain;
     margin-right: 10px;
     margin-bottom: 10px;
     cursor: pointer;
-}
 
-.gallery {
-    display: flex;
 }
 
 .gallery-column {
-  flex-basis: 24vw;
-  max-width: 24vw;
+  flex-basis: 32vw;
+  max-width: 32vw;
   padding-right: 10px;
   box-sizing: border-box;
    position:relative;
-}
 
-.gallery-column #randomImage{
-	position:absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  max-height: 90vh;
-  width: 33vw;
 }
 
 .gallery-column:last-child {
   padding-right: 0;
-}
-
-.gallery-column img {
-  width: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  margin-bottom: 10px;
 }
 
 /* Random image */
@@ -351,8 +367,11 @@ nav a:hover {
 	transition: 0.5s;
 }
 
+.hidden {
+            display: none;
 
-/* MOBILE VERSION */
+
+/* MOBILE VERSION *//////////////////////////////////////////////
 
 @media (max-width: 1080px) {
 	
@@ -514,26 +533,18 @@ nav a:hover {
 }
 
 .gallery img {
-    width: calc(25%;);
+    width: calc(33%;);
     max-width: 100%;
     object-fit: cover;
     cursor: pointer;
 }
 
 .gallery-column {
-  flex-basis: 25%;
-  max-width: 25%;
+  flex-basis: 33%;
+  max-width: 33%;
   padding-right: 0px;
   box-sizing: border-box;
    position:relative;
-}
-
-.gallery-column #randomImage{
-	position:absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-  margin: auto;
-  max-height: 90vh;
-  width: 33vw;
 }
 
 .gallery-column:last-child {
@@ -546,6 +557,8 @@ nav a:hover {
   object-fit: contain;
 margin-bottom: -7px;
 }
+
+
 
 /* Random image */
 
@@ -706,4 +719,5 @@ margin-bottom: -7px;
 	transition: 0.5s;
 }
 
-}
+.hidden {
+            display: none;

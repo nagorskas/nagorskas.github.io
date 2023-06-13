@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var randomImageElement = document.getElementById("randomImage");
 
   // Array of image filenames
-  var images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg"];
+  var images = ["220130_01.jpg", "220314_01.jpg", "220314_02.jpg", "220810_01.jpg",
+  "220815_01.jpg", "220816_01.jpg", "220131_01.jpg", "220313_01.jpg", "220912_01.jpg", "220912_02.jpg",
+  "221019_01.jpg", "221114_01.jpg", "221114_02.jpg", "221031_01.jpg"];
 
   // Generate a random index within the range of the images array
   var randomIndex = Math.floor(Math.random() * images.length);
@@ -122,37 +124,23 @@ $(document).ready(function() {
     $(document).on("click", ".lang-button", handleLanguageButtonClick);
 });
 
-//** PULL IMAGES **//
-$(document).ready(function() {
-    // Define the path to the folder containing the images
-    var imagePath = "img/color/";
 
-    // Select the gallery-columns container
-    var galleryColumns = $(".gallery-columns");
+//* IMAGE FILTER *//
 
-    // Function to load and display the images
-    function loadImages() {
-        // Perform an AJAX request to get the list of images from the folder
-        $.ajax({
-            url: imagePath,
-            success: function(data) {
-                // Find all <a> elements within the AJAX response
-                $(data).find("a").attr("href", function(i, val) {
-                    // Check if the file extension is an image format
-                    if (val.match(/\.(jpe?g|png|gif)$/)) {
-                        // Create an <img> element with the image source set to the file path
-                        var img = $("<img>").attr("src", imagePath + val);
-                        // Append the <img> element to one of the gallery-column divs
-                        galleryColumns.eq(i % 4).append(img);
-                    }
-                });
-            }
+
+        $(document).ready(function() {
+            filterImages('monochrome');
         });
-    }
 
-    // Call the loadImages function to load and display the images
-    loadImages();
-});
-
+        function filterImages(category) {
+            $('.gallery .gallery-column').each(function() {
+                var columnCategory = $(this).data('category');
+                if (columnCategory === category) {
+                    $(this).find('img').removeClass('hidden');
+                } else {
+                    $(this).find('img').addClass('hidden');
+                }
+            });
+        }
 
 
