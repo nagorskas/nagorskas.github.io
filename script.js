@@ -122,4 +122,37 @@ $(document).ready(function() {
     $(document).on("click", ".lang-button", handleLanguageButtonClick);
 });
 
+//** PULL IMAGES **//
+$(document).ready(function() {
+    // Define the path to the folder containing the images
+    var imagePath = "img/color/";
+
+    // Select the gallery-columns container
+    var galleryColumns = $(".gallery-columns");
+
+    // Function to load and display the images
+    function loadImages() {
+        // Perform an AJAX request to get the list of images from the folder
+        $.ajax({
+            url: imagePath,
+            success: function(data) {
+                // Find all <a> elements within the AJAX response
+                $(data).find("a").attr("href", function(i, val) {
+                    // Check if the file extension is an image format
+                    if (val.match(/\.(jpe?g|png|gif)$/)) {
+                        // Create an <img> element with the image source set to the file path
+                        var img = $("<img>").attr("src", imagePath + val);
+                        // Append the <img> element to one of the gallery-column divs
+                        galleryColumns.eq(i % 4).append(img);
+                    }
+                });
+            }
+        });
+    }
+
+    // Call the loadImages function to load and display the images
+    loadImages();
+});
+
+
 
