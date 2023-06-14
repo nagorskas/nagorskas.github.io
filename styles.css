@@ -118,7 +118,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
- /* BUTTONS */
+ /* FILTER BUTTONS */
  
  .buttons {
   margin-bottom: 1%;
@@ -490,6 +490,26 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* FILTER BUTTONS */
+ 
+ .buttons {
+  margin-bottom: 1%;
+}
+ 
+ .button {
+	 display: inline-block;
+  margin-left: 0px;
+  padding: 8px 8px;
+  font-size: 28px;
+  font-weight: 300;
+  font-family: Montserrat;
+  color: #8E8E8E;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent; /* Set background color to transparent */
+ }
+
 /* Page content */
 
 .content {
@@ -515,7 +535,7 @@ nav a:hover {
   background-color: #fff;
   color: #707070;
   text-align: center;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 300;
   margin-top: auto; /* Push the footer to the bottom */
   width: 100vw; /* Adjust the width as desired */
@@ -721,5 +741,6 @@ margin-bottom: -7px;
 
 .hidden {
             display: none;
+			
 }
 }
