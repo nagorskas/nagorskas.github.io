@@ -452,7 +452,7 @@ nav a:hover {
 	/* PROJECT GALLERY DISPLAY page */
 
 .gallery-container {
-	max-width: 95vw;
+	width: 95vw;
 }
 
 .thumbnail {
