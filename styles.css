@@ -1,7 +1,7 @@
 	/* !!! WEB VERSION !!! */
 
 body {
-    font-family : 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 0;
 	font-size: 14px;
@@ -16,9 +16,8 @@ body::-webkit-scrollbar{
   }
 
 h2 { /* Project title */
-    font-weight: 400;
+    font-weight: 300;
 	font-size: 20px;
-	
 }
 
 	/* HEADER */
@@ -35,6 +34,7 @@ h2 { /* Project title */
 	margin-top: 2.5%;
     font-weight: 400;
 	font-size: 24px;
+	letter-spacing: rem;
 }
 
 	/* MENU */
@@ -48,14 +48,15 @@ nav ul {
 }
 
 nav li {
-    margin: 15px;
+    margin: 15px 25px 15px 25px;
 }
 
 nav a {
     color: #8E8E8E;
     text-decoration: none;
 	transition: 0.5s;
-	font-weight: 400;
+	font-weight: 300;
+	letter-spacing: .1rem;
 }
 
 nav a:hover {
@@ -95,7 +96,7 @@ nav a:hover {
 	padding: 8px 8px;
 	font-size: 12px;
 	font-weight: 300;
-	font-family: Montserrat;
+	font-family: 'Open Sans', sans-serif;
 	color: #8E8E8E;
 	border: none;
 	border-radius: 4px;
@@ -143,6 +144,7 @@ nav a:hover {
 	width: 100vw;
 	border-top: 1px solid #F5F5F5;
 	padding: 0.3%;
+	letter-spacing: .1rem;
 }
 
 
@@ -192,8 +194,8 @@ nav a:hover {
 	margin-left: 0px;
 	padding: 8px 8px;
 	font-size: 12px;
-	font-weight: 300;
-	font-family: Montserrat;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 	color: #8E8E8E;
 	border: none;
 	border-radius: 4px;
