@@ -136,11 +136,13 @@ $(document).ready(function() {
             $('.gallery .gallery-column').each(function() {
                 var columnCategory = $(this).data('category');
                 if (columnCategory === category) {
-                    $(this).find('img').removeClass('hidden');
+                    $(this).removeClass('hidden');
                 } else {
-                    $(this).find('img').addClass('hidden');
+                    $(this).addClass('hidden');
                 }
             });
         }
+		
+		
 
 
