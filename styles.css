@@ -45,16 +45,15 @@ nav li {
 }
 
 nav a {
-    color: #8E8E8E;
+    color: #B1B1B1;
     text-decoration: none;
 	transition: 0.5s;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: .1rem;
 }
 
 nav a:hover {
-	color: #000;
-	transition: 0.5s;
+	color: #747474;
 }
 
 nav a.active {
