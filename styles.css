@@ -16,28 +16,21 @@ body::-webkit-scrollbar{
   }
 
 h2 { /* Project title */
-    font-weight: 300;
-	font-size: 20px;
+	font-weight: 300;
 }
-
-	/* HEADER */
 
 .header {
     background-color: #fff;
     color: #000;
-    box-sizing: border-box;
     text-align: center;
 	width: 100vw;
 }
 
-.header h1 { /* Site title */
+.header h1 {
 	margin-top: 2.5%;
     font-weight: 500;
 	font-size: 24px;
-	letter-spacing: rem;
 }
-
-	/* MENU */
 
 nav ul {
     list-style-type: none;
@@ -69,18 +62,21 @@ nav a.active {
   font-weight: 400;
 }
 
-
-	/* Menu: DROPDOWN PROJECTS */
-
 .dropdown-menu {
 	display: none;
 	position: absolute;
 	background-color: #fff;
-	padding: 5px;
-	padding-top: 10px;
 	list-style-type: none;
 	z-index: 999;
 	text-align: justify;
+}
+
+.dropdown-menu a {
+	letter-spacing: 0.05rem;
+}
+
+.dropdown-menu li {
+    margin: 15px 25px 15px 15px ;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -127,18 +123,15 @@ nav a.active {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-grow: 1;
-
 }
 
 .text-container {
-	width: 56vw;
-	font-weight: 400;
+	width: 56%;
 	text-align: justify;
 	display: block;
 	justify-content: center;
 	align-items: center;
 }
-
 
 .footer {
 	background-color: #fff;
@@ -152,8 +145,6 @@ nav a.active {
 	padding: 0.3%;
 	letter-spacing: .1rem;
 }
-
-
 
 	/* PORTFOLIO page */
 
@@ -192,7 +183,7 @@ nav a.active {
 	/* portfolio: FILTER BUTTONS */
  
 .buttons {
-	margin-bottom: 2vh;
+	margin-bottom: 2%;
 }
  
 .button {
@@ -426,12 +417,8 @@ nav a:hover {
 	/* GENERAL CONTENT */
 
 .text-container {
-	width: 95vw;
+	width: 95%;
 }
-
-	/* PORTFOLIO page */
-
-
 
 	/* portfolio: FILTER BUTTONS */
  
