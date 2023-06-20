@@ -142,26 +142,6 @@ $(document).ready(function() {
                 }
             });
         }
-		
-		
-// ACTIVE MENU ITEM
-
-// Get the current page URL
-var currentPage = window.location.href;
-
-// Add the "active" class to the corresponding navigation item
-$(document).ready(function() {
-    $('#navigation').load('navigation.html', function() {
-        // Wait for the navigation menu to be fully loaded
-        $('#navigation li a').each(function() {
-            var href = $(this).attr('href');
-            // Check if the current page URL contains the href
-            if (currentPage.indexOf(href) !== -1) {
-                $(this).parent().addClass('active');
-            }
-        });
-    });
-});
 
 
 

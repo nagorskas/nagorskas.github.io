@@ -64,9 +64,9 @@ nav a:hover {
 	transition: 0.5s;
 }
 
-nav li.active a {
-    color: #000;
-	font-weight: 400;
+nav a.active {
+  color: #000;
+  font-weight: 400;
 }
 
 

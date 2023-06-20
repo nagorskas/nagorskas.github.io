@@ -50,5 +50,15 @@
 	
     <script src="script.js"></script>
 	<script src="includescripts.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#navigation').load('navigation.html', function() {
+			var activeItemIds = ['projects', 'praeitiessviesa'];
+			activeItemIds.forEach(function(itemId) {
+				$('#' + itemId).addClass('active');
+			});
+		});
+	});
+	</script>
 </body>
 </html>
