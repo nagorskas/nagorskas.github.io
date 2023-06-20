@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Portfolio – TAUTVYDAS NAGORSKAS</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
@@ -65,7 +66,7 @@
 	<script src="includescripts.js"></script>
 	<script>
 	$(document).ready(function() {
-		$('#navigation').load('navigation.html', function() {
+		$('#navigation').load('includes/navbar.html', function() {
 			var activeItemIds = ['portfolio'];
 			activeItemIds.forEach(function(itemId) {
 				$('#' + itemId).addClass('active');
