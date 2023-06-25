@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var images = [
   "img/bw/018fpc1sg4a-01.jpg", "img/bw/019fpc2sg4a-03.jpg", "img/bw/019fpc2sg4a-09.jpg", "img/bw/220130_01.jpg",
   "img/bw/220314_01.jpg", "img/bw/220314_02.jpg", "img/bw/220810_01.jpg", "img/bw/220816_01.jpg",
+  "img/bw/210107_01.jpg", "img/bw/009apx1z11-00.jpg",
   "img/color/220131_01.jpg", "img/color/220313_01.jpg", "img/color/220912_01.jpg", "img/color/220912_02.jpg",
-  "img/color/221019_01.jpg", "img/color/221114_02.jpg", "img/color/221031_01.jpg",
+  "img/color/221019_01.jpg", "img/color/221114_02.jpg", "img/color/221031_01.jpg", "img/color/210604_01.jpg", "img/color/210201_01.jpg",
   ];
 
   // Generate a random index within the range of the images array
