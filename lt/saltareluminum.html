@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
-    <title>Light of the Past: Pioneer Camp – TAUTVYDAS NAGORSKAS</title>
+    <title>Saltare Luminum - TAUTVYDAS NAGORSKAS</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
     <link rel="stylesheet" type="text/css" href="/styles.css">
@@ -19,7 +19,7 @@
 
  <div class="content">
         <div class="text-container">
-		<h2>Light of the Past: Pioneer Camp, 2022</h2>
+		<h2>Saltare Luminum, 2022</h2>
 		<p><!-- text here -->
 		</p>
         </div>
@@ -27,19 +27,18 @@
 		
 		<div class="gallery-container">
   <div class="main-image-container">
-    <img class="main-image" id="mainImage" src="/img/ps/ps1.JPG" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
+    <img class="main-image" id="mainImage" src="/img/saltareluminum/saltareluminum1.jpg" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
   </div>
 
 	<div class="thumbnail-container">
 	<div class="thumbnails">
-    <img class="thumbnail" src="/img/ps/ps1.JPG" onclick="changeMainImage('/img/ps/ps1.JPG')">
-	<img class="thumbnail" src="/img/ps/ps2.JPG" onclick="changeMainImage('/img/ps/ps2.JPG')">
-	<img class="thumbnail" src="/img/ps/ps3.JPG" onclick="changeMainImage('/img/ps/ps3.JPG')">
-	<img class="thumbnail" src="/img/ps/ps4.JPG" onclick="changeMainImage('/img/ps/ps4.JPG')">
-	<img class="thumbnail" src="/img/ps/ps5.JPG" onclick="changeMainImage('/img/ps/ps5.JPG')">
-	<img class="thumbnail" src="/img/ps/ps6.JPG" onclick="changeMainImage('/img/ps/ps6.JPG')">
-	<img class="thumbnail" src="/img/ps/ps7.JPG" onclick="changeMainImage('/img/ps/ps7.JPG')">
-	<img class="thumbnail" src="/img/ps/ps8.JPG" onclick="changeMainImage('/img/ps/ps8.JPG')">
+    <img class="thumbnail" src="/img/saltareluminum/saltareluminum1.jpg" onclick="changeMainImage('/img/saltareluminum/saltareluminum1.jpg')">
+	<img class="thumbnail" src="/img/saltareluminum/saltareluminum2.jpg" onclick="changeMainImage('/img/saltareluminum/saltareluminum2.jpg')">
+	<img class="thumbnail" src="/img/saltareluminum/saltareluminum3.jpg" onclick="changeMainImage('/img/saltareluminum/saltareluminum3.jpg')">
+	<img class="thumbnail" src="/img/saltareluminum/saltareluminum4.jpg" onclick="changeMainImage('/img/saltareluminum/saltareluminum4.jpg')">
+	<img class="thumbnail" src="/img/saltareluminum/saltareluminum5.jpg" onclick="changeMainImage('/img/saltareluminum/saltareluminum5.jpg')">
+	<img class="thumbnail" src="/img/saltareluminum/saltareluminum6.jpg" onclick="changeMainImage('/img/saltareluminum/saltareluminum6.jpg')">
+	
 	</div>
 	</div>
 
@@ -52,11 +51,11 @@
 	</footer>
 	
     <script src="/script.js"></script>
-	<script src="/includescripts.js"></script>
+	<script src="/includescripts_lt.js"></script>
 	<script>
 	$(document).ready(function() {
-		$('#navigation').load('/includes/navbar.html', function() {
-			var activeItemIds = ['projects', 'praeitiessviesa'];
+		$('#navigation').load('/includes/navbar_lt.html', function() {
+			var activeItemIds = ['projects', 'saltareluminum'];
 			activeItemIds.forEach(function(itemId) {
 				$('#' + itemId).addClass('active');
 			});

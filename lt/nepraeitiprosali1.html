@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
-    <title>Light of the Past: Pioneer Camp – TAUTVYDAS NAGORSKAS</title>
+    <title>(Ne)praeiti pro šalį I – TAUTVYDAS NAGORSKAS</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
     <link rel="stylesheet" type="text/css" href="/styles.css">
@@ -11,6 +11,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<meta name="keywords" content="tautvydas,nagorskas,photography,fotografija,photographer,fotografas,artist,menininkas,conceptual,praeities,sviesa,light,past,nepraeiti,pro,sali,not,to,pass,by,pauzes,pauses,saltare,luminum" />
 	<meta name="description" content="Work of conceptual photographer Tautvydas Nagorskas.">
+	
 </head>
 <body>
 	<div class="header">
@@ -19,49 +20,44 @@
 
  <div class="content">
         <div class="text-container">
-		<h2>Light of the Past: Pioneer Camp, 2022</h2>
+		<h2>(Ne)praeiti pro šalį I, 2020</h2>
 		<p><!-- text here -->
 		</p>
         </div>
 		
 		
-		<div class="gallery-container">
+<div class="gallery-container">
   <div class="main-image-container">
-    <img class="main-image" id="mainImage" src="/img/ps/ps1.JPG" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
+    <img class="main-image" id="mainImage" src="/img/nps/nps1-1.jpg" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
   </div>
-
-	<div class="thumbnail-container">
-	<div class="thumbnails">
-    <img class="thumbnail" src="/img/ps/ps1.JPG" onclick="changeMainImage('/img/ps/ps1.JPG')">
-	<img class="thumbnail" src="/img/ps/ps2.JPG" onclick="changeMainImage('/img/ps/ps2.JPG')">
-	<img class="thumbnail" src="/img/ps/ps3.JPG" onclick="changeMainImage('/img/ps/ps3.JPG')">
-	<img class="thumbnail" src="/img/ps/ps4.JPG" onclick="changeMainImage('/img/ps/ps4.JPG')">
-	<img class="thumbnail" src="/img/ps/ps5.JPG" onclick="changeMainImage('/img/ps/ps5.JPG')">
-	<img class="thumbnail" src="/img/ps/ps6.JPG" onclick="changeMainImage('/img/ps/ps6.JPG')">
-	<img class="thumbnail" src="/img/ps/ps7.JPG" onclick="changeMainImage('/img/ps/ps7.JPG')">
-	<img class="thumbnail" src="/img/ps/ps8.JPG" onclick="changeMainImage('/img/ps/ps8.JPG')">
-	</div>
-	</div>
-
+  <div class="thumbnail-container">
+    <img class="thumbnail" src="/img/nps/nps1-1.jpg" alt="Thumbnail 1" onclick="changeMainImage('/img/nps/nps1-1.jpg' )">
+    <img class="thumbnail" src="/img/nps/nps1-2.jpg" alt="Thumbnail 2" onclick="changeMainImage('/img/nps/nps1-2.jpg')">
+    <img class="thumbnail" src="/img/nps/nps1-3.jpg" alt="Thumbnail 3" onclick="changeMainImage('/img/nps/nps1-3.jpg')">
+	<img class="thumbnail" src="/img/nps/nps1-4.jpg" alt="Thumbnail 1" onclick="changeMainImage('/img/nps/nps1-4.jpg')">
+    <img class="thumbnail" src="/img/nps/nps1-5.jpg" alt="Thumbnail 2" onclick="changeMainImage('/img/nps/nps1-5.jpg')">
+    <img class="thumbnail" src="/img/nps/nps1-6.jpg" alt="Thumbnail 3" onclick="changeMainImage('/img/nps/nps1-6.jpg')">
+  </div>
 </div>
 
+
 	<div id="popup"></div>
-	
 	<footer class="footer">
 		<div id="copyright"></div>
 	</footer>
 	
     <script src="/script.js"></script>
-	<script src="/includescripts.js"></script>
+	<script src="/includescripts_lt.js"></script>
 	<script>
 	$(document).ready(function() {
-		$('#navigation').load('/includes/navbar.html', function() {
-			var activeItemIds = ['projects', 'praeitiessviesa'];
+		$('#navigation').load('/includes/navbar_lt.html', function() {
+			var activeItemIds = ['projects', 'nps1'];
 			activeItemIds.forEach(function(itemId) {
 				$('#' + itemId).addClass('active');
 			});
 		});
 	});
 	</script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <title>Portfolio – TAUTVYDAS NAGORSKAS</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
@@ -19,8 +19,8 @@
 	
 <div class="content">
         <div class="buttons">
-            <button class="button" onclick="filterImages('monochrome')">Monochrome</button>
-            <button class="button" onclick="filterImages('color')">Color</button>
+            <button class="button" onclick="filterImages('monochrome')">Juodai-balta</button>
+            <button class="button" onclick="filterImages('color')">Spalvota</button>
         </div>
         <div class="gallery"> <!-- bw gallery -->
             <div class="gallery-column" data-category="monochrome">
@@ -71,10 +71,10 @@
 	</footer>
 	
     <script src="/script.js"></script>
-	<script src="/includescripts.js"></script>
+	<script src="/includescripts_lt.js"></script>
 	<script>
 	$(document).ready(function() {
-		$('#navigation').load('/includes/navbar.html', function() {
+		$('#navigation').load('/includes/navbar_lt.html', function() {
 			var activeItemIds = ['portfolio'];
 			activeItemIds.forEach(function(itemId) {
 				$('#' + itemId).addClass('active');

@@ -1,6 +1,6 @@
 const navigation = document.getElementById('navigation');
 
-fetch('/includes/navbar.html')
+fetch('/includes/navbar_lt.html')
   .then(response => response.text())
   .then(html => {
     navigation.innerHTML = html;
@@ -11,7 +11,7 @@ fetch('/includes/navbar.html')
 
 const copyright = document.getElementById('copyright');
 
-fetch('/includes/copy.html')
+fetch('/includes/copy_lt.html')
   .then(response => response.text())
   .then(html => {
     copyright.innerHTML = html;

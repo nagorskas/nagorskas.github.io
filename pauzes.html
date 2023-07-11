@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pauzės - TAUTVYDAS NAGORSKAS</title>
-	<link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pauses - TAUTVYDAS NAGORSKAS</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<meta name="keywords" content="tautvydas,nagorskas,photography,fotografija,photographer,fotografas,artist,menininkas,conceptual,praeities,sviesa,light,past,nepraeiti,pro,sali,not,to,pass,by,pauzes,pauses,saltare,luminum" />
+	<meta name="description" content="Work of conceptual photographer Tautvydas Nagorskas.">
 </head>
 <body>
 	<div class="header">
@@ -17,7 +19,7 @@
 
  <div class="content">
         <div class="text-container">
-		<h2>Pauzės, 2022</h2>
+		<h2>Pauses, 2022</h2>
 		<p><!-- text here -->
 		</p>
         </div>
@@ -25,16 +27,16 @@
 		
 		<div class="gallery-container">
   <div class="main-image-container">
-    <img class="main-image" id="mainImage" src="img/pauzes/pauzes1.jpg" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
+    <img class="main-image" id="mainImage" src="/img/pauzes/pauzes1.jpg" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
   </div>
 
 	<div class="thumbnail-container">
 	<div class="thumbnails">
-    <img class="thumbnail" src="img/pauzes/pauzes1.jpg" onclick="changeMainImage('img/pauzes/pauzes1.jpg')">
-	<img class="thumbnail" src="img/pauzes/pauzes2.jpg" onclick="changeMainImage('img/pauzes/pauzes2.jpg')">
-	<img class="thumbnail" src="img/pauzes/pauzes3.jpg" onclick="changeMainImage('img/pauzes/pauzes3.jpg')">
-	<img class="thumbnail" src="img/pauzes/pauzes4.jpg" onclick="changeMainImage('img/pauzes/pauzes4.jpg')">
-	<img class="thumbnail" src="img/pauzes/pauzes5.jpg" onclick="changeMainImage('img/pauzes/pauzes5.jpg')">
+    <img class="thumbnail" src="/img/pauzes/pauzes1.jpg" onclick="changeMainImage('/img/pauzes/pauzes1.jpg')">
+	<img class="thumbnail" src="/img/pauzes/pauzes2.jpg" onclick="changeMainImage('/img/pauzes/pauzes2.jpg')">
+	<img class="thumbnail" src="/img/pauzes/pauzes3.jpg" onclick="changeMainImage('/img/pauzes/pauzes3.jpg')">
+	<img class="thumbnail" src="/img/pauzes/pauzes4.jpg" onclick="changeMainImage('/img/pauzes/pauzes4.jpg')">
+	<img class="thumbnail" src="/img/pauzes/pauzes5.jpg" onclick="changeMainImage('/img/pauzes/pauzes5.jpg')">
 	
 	</div>
 	</div>
@@ -47,11 +49,11 @@
 		<div id="copyright"></div>
 	</footer>
 	
-    <script src="script.js"></script>
-	<script src="includescripts.js"></script>
+    <script src="/script.js"></script>
+	<script src="/includescripts.js"></script>
 	<script>
 	$(document).ready(function() {
-		$('#navigation').load('includes/navbar.html', function() {
+		$('#navigation').load('/includes/navbar.html', function() {
 			var activeItemIds = ['projects', 'pauzes'];
 			activeItemIds.forEach(function(itemId) {
 				$('#' + itemId).addClass('active');
