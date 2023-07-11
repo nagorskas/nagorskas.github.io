@@ -103,15 +103,16 @@ nav a.active {
 	border-radius: 4px;
 	cursor: pointer;
 	background-color: transparent;
+	text-decoration: none;
 }
 
 .lang-button:hover {
 	color: #000;
 }
 
-.lang-button:active {
+#active {
+	font-weight: 400;
 	color: #000;
-	text-decoration: underline;
 }
 
 	/* GENERAL CONTENT */

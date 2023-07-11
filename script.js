@@ -91,22 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
- // * LANGUAGES */
-// Function to change the language
-function changeLanguage(language) {
-    // Get all elements with the "translate" class
-    var elements = $(".translate");
-
-    // Iterate through the elements and update their text content based on the selected language
-    elements.each(function() {
-        var translation = $(this).data(language);
-        if (translation) {
-            $(this).text(translation);
-        }
-    });
-}
-
 // Function to handle language button click
 function handleLanguageButtonClick() {
     var language = $(this).data("language");
