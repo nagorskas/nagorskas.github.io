@@ -175,6 +175,33 @@ nav a.active {
 	padding-right: 0;
 }
 
+.des-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.des-gallery img {
+	width: calc(25vw - 10px);
+	max-width: 100%;
+	object-fit: contain;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.des-gallery-column {
+	flex-basis: 23vw;
+	max-width: 23vw;
+	margin: 5px;
+	box-sizing: border-box;
+	position:relative;
+}
+
+.des-gallery-column:last-child {
+	padding-right: 0;
+}
+
 .hidden {
 	display: none;
 	padding: 0;
@@ -400,7 +427,7 @@ h2 { /* Project title */
 	/* MENU */
 	
 nav a {
-	font-size: 32px;
+	font-size: 24px;
 }
 
 nav a:hover {
