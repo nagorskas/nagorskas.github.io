@@ -423,11 +423,11 @@ nav a.active {
 @media (max-width: 1080px) {
 	
 body {
-	font-size: 24px;
+	font-size: 36px;
 }
 
 h2 { /* Project title */
-	font-size: 24px;
+	font-size: 48px;
 }
 
 	/* HEADER */
@@ -441,6 +441,12 @@ h2 { /* Project title */
 
 nav {
 	display: none;
+	height: 100%;
+	width: 100vw;
+	z-index:999;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.95);
+	padding-bottom: 80px;
 }
 
 nav ul {
@@ -448,12 +454,24 @@ nav ul {
 }
 	
 nav a {
-	font-size: 42px;
+	font-size: 48px;
 }
 
 nav a:hover {
 	color: #000;
 	transition: 0.5s;
+}
+
+.dropdown-menu {
+	text-align: center;
+}
+
+.dropdown-menu a {
+	font-size: 36px;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: contents;
 }
 
 .menubutton {
