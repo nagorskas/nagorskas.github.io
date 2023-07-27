@@ -5,34 +5,134 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- ENGLISH -->
+
 <url>
-  <loc>http://tautvydasnagorskas.lt/</loc>
+  <loc>http://tautvydasnagorskas.lt/index.html</loc>
+	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/index.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/index.html">
   <priority>1.0</priority>
 </url>
+
 <url>
-  <loc>http://tautvydasnagorskas.lt/portfolio.html</loc>
+  <loc>http://tautvydasnagorskas.lt/nottopassby1.html</loc>
+	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/nottopassby1.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/nepraeitiprosali1.html">  
   <priority>0.5</priority>
 </url>
+
 <url>
-  <loc>http://tautvydasnagorskas.lt/nepraeitiprosali1.html</loc>
+  <loc>http://tautvydasnagorskas.lt/nottopassby2.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/nottopassby2.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/nepraeitiprosali2.html">
   <priority>0.5</priority>
 </url>
+
 <url>
-  <loc>http://tautvydasnagorskas.lt/nepraeitiprosali2.html</loc>
+  <loc>http://tautvydasnagorskas.lt/pioneercamp.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/pioneercamp.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/pionieriustovykla.html">
   <priority>0.5</priority>
 </url>
-<url>
-  <loc>http://tautvydasnagorskas.lt/praeitiessviesa.html</loc>
-  <priority>0.5</priority>
-</url>
+
 <url>
   <loc>http://tautvydasnagorskas.lt/saltareluminum.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/saltareluminum.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/saltareluminum.html">
   <priority>0.5</priority>
 </url>
+
 <url>
-  <loc>http://tautvydasnagorskas.lt/pauzes.html</loc>
+  <loc>http://tautvydasnagorskas.lt/pauses.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/pauses.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/pauzes.html">
   <priority>0.5</priority>
 </url>
 
+<url>
+  <loc>http://tautvydasnagorskas.lt/lightofthepast.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/lightofthepast.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/praeitiessviesa.html">
+  <priority>0.5</priority>
+</url>
 
-</urlset>
+<url>
+  <loc>http://tautvydasnagorskas.lt/portfolio.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/portfolio.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/portfolio.html">
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>http://tautvydasnagorskas.lt/portfolio-design.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/portfolio-design.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/portfolio-design.html">
+  <priority>0.1</priority>
+</url>
+
+<url>
+  <loc>http://tautvydasnagorskas.lt/contact.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/contact.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/contact.html">
+  <priority>0.1</priority>
+</url>
