@@ -23,6 +23,18 @@ document.addEventListener("DOMContentLoaded", function() {
   "/img/bw/210107_01.jpg", "/img/bw/009apx1z11-00.jpg",
   "/img/color/220131_01.jpg", "/img/color/220313_01.jpg", "/img/color/220912_01.jpg", "/img/color/220912_02.jpg",
   "/img/color/221019_01.jpg", "/img/color/221114_02.jpg", "/img/color/221031_01.jpg", "/img/color/210604_01.jpg", "/img/color/210201_01.jpg",
+  "/img/nps/nps1-1.jpg", "/img/nps/nps1-2.jpg", "/img/nps/nps1-3.jpg", "/img/nps/nps1-4.jpg", "/img/nps/nps1-5.jpg", "/img/nps/nps1-6.jpg", 
+  "/img/nps/nps2-1.jpg", "/img/nps/nps2-2.jpg", "/img/nps/nps2-3.jpg", "/img/nps/nps2-4.jpg", "/img/nps/nps2-5.jpg", "/img/nps/nps2-6.jpg", 
+  "/img/praeitiessviesa/ps1.JPG", "/img/praeitiessviesa/ps2.JPG", "/img/praeitiessviesa/ps3.JPG", "/img/praeitiessviesa/ps4.JPG", "/img/praeitiessviesa/ps5.JPG", 
+  "/img/praeitiessviesa/ps6.JPG", "/img/praeitiessviesa/ps7.JPG", "/img/praeitiessviesa/ps8.JPG", "/img/praeitiessviesa/ps9.JPG", "/img/praeitiessviesa/ps10.JPG", 
+  "/img/praeitiessviesa/ps11.JPG", "/img/praeitiessviesa/ps12.JPG", "/img/praeitiessviesa/ps13.JPG", "/img/praeitiessviesa/ps14.JPG", "/img/praeitiessviesa/ps15.JPG", 
+  "/img/praeitiessviesa/ps16.JPG", "/img/praeitiessviesa/ps17.JPG", "/img/praeitiessviesa/ps18.JPG", "/img/praeitiessviesa/ps19.JPG", "/img/praeitiessviesa/ps20.JPG", 
+  "/img/praeitiessviesa/ps21.JPG",
+  "/img/pionieriustovykla/ps1.JPG", "/img/pionieriustovykla/ps2.JPG", "/img/pionieriustovykla/ps3.JPG", "/img/pionieriustovykla/ps4.JPG", "/img/pionieriustovykla/ps5.JPG", 
+  "/img/pionieriustovykla/ps6.JPG", "/img/pionieriustovykla/ps7.JPG", "/img/pionieriustovykla/ps8.JPG",
+  "/img/saltareluminum/saltareluminum1.jpg", "/img/saltareluminum/saltareluminum2.jpg", "/img/saltareluminum/saltareluminum3.jpg", "/img/saltareluminum/saltareluminum4.jpg", 
+  "/img/saltareluminum/saltareluminum5.jpg", "/img/saltareluminum/saltareluminum6.jpg", 
+  "/img/pauzes/pauzes1.jpg", "/img/pauzes/pauzes2.jpg", "/img/pauzes/pauzes3.jpg", "/img/pauzes/pauzes4.jpg", "/img/pauzes/pauzes5.jpg", 
   ];
 
   // Generate a random index within the range of the images array
