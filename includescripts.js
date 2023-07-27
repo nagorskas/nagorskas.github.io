@@ -30,3 +30,6 @@ fetch('/includes/popup.html')
   .catch(error => {
     console.error(`Error loading navigation component: ${error}`);
   });
+  
+
+  

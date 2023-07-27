@@ -60,7 +60,7 @@ nav li {
 }
 
 nav a {
-    color: #B1B1B1;
+    color: #B1B1B1; 
     text-decoration: none;
 	transition: 0.5s;
 	font-weight: 400;
@@ -297,17 +297,23 @@ nav a.active {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 1);
 }
 
 .image-popup .close-button {
-	color: #000;
+	color: #B1B1B1;
 	font-size: 24px;
 	font-weight: bold;
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	cursor: pointer;
+	transition: 0.5s;
+}
+
+.close-button:hover {
+	color: #747474;
+	transition: 0.5s;
 }
 
 .image-popup #popupImage {
@@ -320,6 +326,38 @@ nav a.active {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid #fff;
+}
+
+.prev-arrow {
+	color: #B1B1B1;
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.prev-arrow:hover {
+	color: #747474;
+	transition: 0.5s;
+}
+
+.next-arrow {
+	color: #B1B1B1;
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.next-arrow:hover {
+	color: #747474;
+	transition: 0.5s;
 }
 
 	/* PROJECT GALLERY DISPLAY page */
@@ -341,9 +379,16 @@ nav a.active {
 
 .thumbnail {
 	object-fit: cover;
-	max-height: 6vw;
+	height: 8vh;
 	width: auto;
-	padding: 3px;
+	padding: 2px;
+	transition: 0.1s;
+}
+
+.thumbnail.active-thumbnail {
+	height:calc(8vh + 4px);
+	transition: 0.1s;
+	padding: 0px;
 }
 
 .main-image-container {
@@ -361,11 +406,14 @@ nav a.active {
 	justify-content: center;
 }
 
+
+
 	/* project gallery: SCROLLBAR */
 
 .thumbnail-container::-webkit-scrollbar {
-	height: 6px;
+	height: 4px;
 	background-color: #fff;
+
 }
 
 .thumbnail-container::-webkit-scrollbar-thumb {
@@ -428,6 +476,11 @@ body {
 
 h2 { /* Project title */
 	font-size: 48px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 50px;
 }
 
 	/* HEADER */
@@ -516,9 +569,36 @@ nav a:hover {
 
 .image-popup #popupImage {
     max-width: 100%;
-    max-height: 90vh;
+    max-height: 90vh; 
 	border: 0px solid #fff;
 }
+
+.prev-arrow {
+    color: #fff;
+    font-size: 50px;
+    top: 17vh;
+    left: 0px;
+    padding: 33vh 2vw 33vh 2vw;
+    text-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+}
+
+.prev-arrow:hover {
+	color: #fff;
+}
+
+.next-arrow {
+    color: #fff;
+    font-size: 50px;
+    top: 17vh;
+    right: 0px;
+    padding: 33vh 2vw 33vh 2vw;
+    text-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+}
+
+.next-arrow:hover {
+	color: #fff;
+}
+
 
 	/* PROJECT GALLERY DISPLAY page */
 
@@ -527,7 +607,13 @@ nav a:hover {
 }
 
 .thumbnail {
-	max-height: 13vw;
+	max-height: 7vh;
+}
+
+.thumbnail.active-thumbnail {
+	max-height:calc(7vh + 6px);
+	transition: 0.2s;
+	padding: 0px;
 }
 
 .main-image-container {
@@ -536,6 +622,7 @@ nav a:hover {
 
 .main-image {
 	max-width: 95vw;
+	max-height: 50vh;
 }
 
 }

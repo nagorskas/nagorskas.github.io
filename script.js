@@ -1,4 +1,4 @@
-			//* display photo on click in gallery // 
+			//* display photo on click in portfolio // 
 
 function showImage(imageUrl) {
   var popupImage = document.getElementById("popupImage");
@@ -51,30 +51,33 @@ thumbnails.forEach((thumbnail) => {
 
 // JavaScript code
 
-// Wrap the code inside a DOMContentLoaded event listener
-document.addEventListener('DOMContentLoaded', function() {
-  // Get all thumbnail images
-  const thumbnails = document.querySelectorAll('.thumbnail');
 
-  // Add click event listener to each thumbnail image
-  thumbnails.forEach(thumbnail => {
-    thumbnail.addEventListener('click', function() {
-      // Get the source of the clicked thumbnail image
-      const thumbnailSrc = this.src;
 
-      // Get the main image element
-      const mainImage = document.getElementById('mainImage');
+// JavaScript - Update the active thumbnail when the main image changes
+function changeMainImage(thumbnail) {
+    // Remove the "active-thumbnail" class from all thumbnails
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach((thumb) => thumb.classList.remove('active-thumbnail'));
 
-      // Update the source of the main image
-      mainImage.src = thumbnailSrc;
-    });
-  });
-});
+    // Add the "active-thumbnail" class to the clicked thumbnail
+    thumbnail.classList.add('active-thumbnail');
 
-function changeMainImage(imagePath) {
-  var mainImage = document.getElementById('mainImage');
-  mainImage.src = imagePath;
+    // Get the src of the clicked thumbnail
+    const thumbnailSrc = thumbnail.src;
+
+    // Replace "_thumb" with an empty string to get the main image source
+    const mainImageSrc = thumbnailSrc.replace('thumb', '');
+
+    // Get the main image element
+    const mainImage = document.getElementById('mainImage');
+
+    // Update the source of the main image
+    mainImage.src = mainImageSrc;
 }
+
+
+
+
 
 
 //* DROPDOWN MENU //
@@ -148,9 +151,5 @@ $(document).ready(function() {
 
 
 
-
-
-
-		
 
 
