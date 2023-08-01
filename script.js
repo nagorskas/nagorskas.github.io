@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var images = [
   "/img/bw/018fpc1sg4a-01.jpg", "/img/bw/019fpc2sg4a-03.jpg", "/img/bw/019fpc2sg4a-09.jpg", "/img/bw/220130_01.jpg",
   "/img/bw/220314_01.jpg", "/img/bw/220314_02.jpg", "/img/bw/220810_01.jpg", "/img/bw/220816_01.jpg",
-  "/img/bw/210107_01.jpg", "/img/bw/009apx1z11-00.jpg",
+  "/img/bw/210107_01.jpg", "/img/bw/009apx1z11-00.jpg", "/img/bw/230728_01.JPG", "/img/bw/230730_01.JPG", "/img/bw/230730_02.JPG", 
   "/img/color/220131_01.jpg", "/img/color/220313_01.jpg", "/img/color/220912_01.jpg", "/img/color/220912_02.jpg",
   "/img/color/221019_01.jpg", "/img/color/221114_02.jpg", "/img/color/221031_01.jpg", "/img/color/210604_01.jpg", "/img/color/210201_01.jpg",
   "/img/nps/nps1-1.jpg", "/img/nps/nps1-2.jpg", "/img/nps/nps1-3.jpg", "/img/nps/nps1-4.jpg", "/img/nps/nps1-5.jpg", "/img/nps/nps1-6.jpg", 
