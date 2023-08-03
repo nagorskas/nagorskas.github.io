@@ -47,6 +47,19 @@
 </url>
 
 <url>
+  <loc>http://tautvydasnagorskas.lt/nottopassby3.html</loc>
+  	<xhtml:link
+	rel="alternate"
+	hreflang="en"
+	href="http://tautvydasnagorskas.lt/nottopassby3.html">
+	<xhtml:link
+	rel="alternate"
+	hreflang="lt"
+	href="http://tautvydasnagorskas.lt/lt/nepraeitiprosali3.html">
+  <priority>0.5</priority>
+</url>
+
+<url>
   <loc>http://tautvydasnagorskas.lt/pioneercamp.html</loc>
   	<xhtml:link
 	rel="alternate"
