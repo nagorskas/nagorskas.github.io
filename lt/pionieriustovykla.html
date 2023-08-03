@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<meta name="keywords" content="tautvydas,nagorskas,photography,fotografija,photographer,fotografas,artist,menininkas,conceptual,praeities,sviesa,light,past,nepraeiti,pro,sali,not,to,pass,by,pauzes,pauses,saltare,luminum" />
 	<meta name="description" content="Work of conceptual photographer Tautvydas Nagorskas.">
 </head>
@@ -19,21 +21,18 @@
 
  <div class="content">
 		<div class="gallery-container">
-		<div class="main-image-container">
-    <img class="main-image" id="mainImage" src="/img/pionieriustovykla/ps1.JPG" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.src)" >
-  </div>
+	
 
-	<div class="thumbnail-container">
-    <img class="thumbnail active-thumbnail" src="/img/pionieriustovykla/thumb/ps1.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps2.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps3.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps4.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps5.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps6.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps7.JPG" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/pionieriustovykla/thumb/ps8.JPG" onclick="changeMainImage(this)">
-	</div>
-
+  <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs" data-keyboard="true">
+		<a href="/img/pionieriustovykla/ps1.JPG"><img src="/img/pionieriustovykla/thumb/ps1.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps2.JPG"><img src="/img/pionieriustovykla/thumb/ps2.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps3.JPG"><img src="/img/pionieriustovykla/thumb/ps3.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps4.JPG"><img src="/img/pionieriustovykla/thumb/ps4.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps5.JPG"><img src="/img/pionieriustovykla/thumb/ps5.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps6.JPG"><img src="/img/pionieriustovykla/thumb/ps6.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps7.JPG"><img src="/img/pionieriustovykla/thumb/ps7.JPG" width="144" height="96"></a>
+		<a href="/img/pionieriustovykla/ps8.JPG"><img src="/img/pionieriustovykla/thumb/ps8.JPG" width="144" height="96"></a>
+		</div>
 </div>
 
 <div class="text-container">

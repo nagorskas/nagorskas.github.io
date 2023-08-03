@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<meta name="keywords" content="tautvydas,nagorskas,photography,fotografija,photographer,fotografas,artist,menininkas,conceptual,praeities,sviesa,light,past,nepraeiti,pro,sali,not,to,pass,by,pauzes,pauses,saltare,luminum" />
 	<meta name="description" content="Work of conceptual photographer Tautvydas Nagorskas.">
 	
@@ -21,17 +23,14 @@
 <div class="content">
 		
 <div class="gallery-container">
-  <div class="main-image-container">
-    <img class="main-image" id="mainImage" src="/img/nps/nps1-1.jpg" alt="Main Image" oncontextmenu="return false;" onclick="showImage(this.Src)" >
-  </div>
-  <div class="thumbnail-container">
-    <img class="thumbnail active-thumbnail" src="/img/nps/thumb/nps1-1.jpg" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/nps/thumb/nps1-2.jpg" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/nps/thumb/nps1-3.jpg" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/nps/thumb/nps1-4.jpg" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/nps/thumb/nps1-5.jpg" onclick="changeMainImage(this)">
-	<img class="thumbnail" src="/img/nps/thumb/nps1-6.jpg" onclick="changeMainImage(this)">
-  </div>
+  <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs" data-keyboard="true">
+		<a href="/img/nps/nps1-1.jpg"><img src="/img/nps/thumb/nps1-1.jpg" width="144" height="96"></a>
+		<a href="/img/nps/nps1-2.jpg"><img src="/img/nps/thumb/nps1-2.jpg" width="144" height="96"></a>
+		<a href="/img/nps/nps1-3.jpg"><img src="/img/nps/thumb/nps1-3.jpg" width="144" height="96"></a>
+		<a href="/img/nps/nps1-4.jpg"><img src="/img/nps/thumb/nps1-4.jpg" width="144" height="96"></a>
+		<a href="/img/nps/nps1-5.jpg"><img src="/img/nps/thumb/nps1-5.jpg" width="144" height="96"></a>
+		<a href="/img/nps/nps1-6.jpg"><img src="/img/nps/thumb/nps1-6.jpg" width="144" height="96"></a>
+		</div>
 </div>
 
 
