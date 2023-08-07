@@ -19,7 +19,7 @@ fetch('/includes/copy.html')
   .catch(error => {
     console.error(`Error loading navigation component: ${error}`);
   });
-
+  
 const popup = document.getElementById('popup');
 
 fetch('/includes/popup.html')
