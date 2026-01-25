@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TAUTVYDAS NAGORSKAS</title>
-	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<meta name="keywords" content="tautvydas,nagorskas,photography,fotografija,photographer,fotografas,artist,menininkas,conceptual,praeities,sviesa,light,past,nepraeiti,pro,sali,not,to,pass,by,pauzes,pauses,saltare,luminum" />
-	<meta name="description" content="Work of conceptual photographer Tautvydas Nagorskas.">
+  <meta charset="UTF-8">
+  <title>Tautvydas Nagorskas</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url(img/bg-scarf.jpg);
+           background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Optional dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      pointer-events: none;
+    }
+
+    .embed-container {
+      position: relative; /* keeps it above overlay */
+      width: 80%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .embed-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
 </head>
+
 <body>
-	<div class="header">
-		<div id="navigation"></div>
-	</div>
-	<div class="content">
-		<div class="random-image" style="justify:center">
-			<img id="randomImage" alt="Random Image" onclick="showImage(this.src)" oncontextmenu="return false;">
-		</div>
-		<div id="popup"></div>
-	</div>
-	<footer class="footer">
-		<div id="copyright"></div>
-	</footer>
-    <script src="/script.js"></script>
-	<script src="/includescripts.js"></script>
-	<script>
-	$(document).ready(function() {
-	 $('#navigation').load('/includes/navbar.html', function() {
-			var activeItemIds = ['home'];
-			activeItemIds.forEach(function(itemId) {
-				$('#' + itemId).addClass('active');
-			});
-		});
-	});
-	</script>
+
+  <div class="embed-container">
+   <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/2LU6OdgbIXB5SuJjAaQClF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+ </div>
+
 </body>
 </html>
