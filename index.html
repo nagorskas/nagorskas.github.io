@@ -38,50 +38,125 @@
 
   <!-- Styles -->
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
+/* --- Full-page reset and background --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-    body {
-      background-image: url("img/bg.JPG");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-    }
+body {
+  position: relative; /* needed for overlay */
+  background-image: url("img/bg.JPG"); /* local background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
 
-    .embed-container {
-      width: 80%;
-      max-width: 900px;
-      aspect-ratio: 16 / 9;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
+/* --- Dark overlay for readability --- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* darken background */
+  z-index: 0;
+  pointer-events: none;
+}
 
-    .embed-container iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+/* --- Container for header + embed --- */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* increased gap between header and embed */
+  z-index: 2; /* above overlay */
+  padding: 20px; /* padding for small screens */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px; /* aligns header and embed widths */
+}
 
-    @media (max-width: 768px) {
-      .embed-container {
-        width: 90%;
-        aspect-ratio: 1 / 1; /* better fit on mobile */
-      }
-    }
+/* --- Social header styling --- */
+.social-header {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between icons */
+  width: 100%;
+}
+
+.social-header a {
+  display: inline-block;
+}
+
+.social-header img {
+  width: 32px;   /* icon size */
+  height: 32px;
+  filter: invert(1); /* makes icons white */
+  transition: opacity 0.2s ease;
+}
+
+.social-header img:hover {
+  opacity: 0.7; /* subtle hover effect */
+}
+
+/* --- Embed container styling --- */
+.embed-container {
+  width: 100%;           /* fill max width of wrapper */
+  max-width: 900px;      /* cap on large screens */
+  min-width: 300px;      /* floor for tiny devices */
+  aspect-ratio: 16 / 9;  /* keeps embed proportionate */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.embed-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+  .embed-container {
+    width: 90%;            /* nearly full width on mobile */
+    aspect-ratio: 1 / 1;   /* square-ish on small screens */
+  }
+
+  .social-header img {
+    width: 28px;
+    height: 28px;
+  }
+}
   </style>
 </head>
 
 <body>
-  <div class="embed-container">
+<div class="content-wrapper">
+  <!-- Social header -->
+  <div class="social-header">
+    <a href="https://open.spotify.com/album/2LU6OdgbIXB5SuJjAaQClF?si=gdTm-bKgQqeBupjabGrQdA" target="_blank" rel="noopener">
+      <img src="https://simpleicons.org/icons/spotify.svg" alt="Spotify">
+    </a>
+    <a href="https://www.youtube.com/@nagorskasmusic" target="_blank" rel="noopener">
+      <img src="https://simpleicons.org/icons/youtube.svg" alt="YouTube">
+    </a>
+    <a href="https://nagorskas.bandcamp.com" target="_blank" rel="noopener">
+      <img src="https://simpleicons.org/icons/bandcamp.svg" alt="Bandcamp">
+    </a>
+    <a href="https://instagram.com/nagorskas.music" target="_blank" rel="noopener">
+      <img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram">
+    </a>
+  </div>
+
+  <!-- Spotify embed -->
+ <div class="embed-container">
     <iframe data-testid="embed-iframe" 
       style="border-radius:12px" 
       src="https://open.spotify.com/embed/album/2LU6OdgbIXB5SuJjAaQClF?utm_source=generator&theme=0" 
@@ -93,5 +168,6 @@
       loading="lazy">
     </iframe>
   </div>
+</div>
 </body>
 </html>
