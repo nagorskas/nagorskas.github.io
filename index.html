@@ -18,23 +18,50 @@
   <meta property="og:image" content="https://nagorskas.lt/img/bg-2.jpg">
 
   <!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "@id": "https://nagorskas.lt/#musicgroup",
+  "name": "Tautvydas Nagorskas",
+  "url": "https://nagorskas.lt/",
+  "genre": [
+    "Art rock",
+    "Psychedelic rock",
+    "Progressive rock",
+    "Alternative rock"
+  ],
+  "sameAs": [
+    "https://open.spotify.com/artist/5Be9nW5nBaKjOFjPx37MhL?si=uXTROrrrQv2h008C544R-Q",
+    "https://music.apple.com/lt/artist/tautvydas-nagorskas/1545447418",
+    "https://www.youtube.com/@nagorskasmusic",
+    "https://www.instagram.com/nagorskas.music/",
+    "https://musicbrainz.org/artist/384263ca-6886-4fd9-9200-8fe1ffc09466"
+  ]
+}
+</script>
+  
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicAlbum",
-    "name": "Anądien krito saulė",
-    "byArtist": {
-      "@type": "MusicGroup",
-      "name": "Tautvydas Nagorskas"
-    },
-    "genre": ["Alternative Rock","Art-Rock","Psychedelic Rock","Progressive Rock"],
-    "datePublished": "2026-01-23",
-    "image": "https://nagorskas.lt/img/bg-2.jpg",
-    "url": "https://nagorskas.lt/",
-    "inLanguage": "lt",
-    "description": "Anądien krito saulė"
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  "@id": "https://nagorskas.lt/#album1",
+  "name": "Anądien krito saulė",
+  "byArtist": {
+    "@id": "https://nagorskas.lt/#musicgroup"
+  },
+  "genre": [
+    "Art rock",
+    "Psychedelic rock",
+    "Progressive rock"
+  ],
+  "datePublished": "2026-01-23",
+  "image": "https://nagorskas.lt/img/bg-2.jpg",
+  "url": "https://nagorskas.lt/",
+  "inLanguage": "lt",
+  "description": "Anądien krito saulė"
+}
+</script>
   <!-- Favicon -->
 <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
 
